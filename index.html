@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Happiness</title>
     <script src="ide.js"></script>
     <link rel="stylesheet" href="ide.css">
   </head>
   <body>
-    <div class="pure-g">
-      <div class="pure-u-1-5">
-        <div class="pure-menu pure-menu-open">
+    <div id="layout">
+      <div id="menu">
+        <div id="menu-container" class="pure-menu pure-menu-open">
+          <a class="pure-menu-heading" href="#">Options</a>
+
           <ul>
-            <li><a href="#">Item 1</a>
-            <li><a href="#">Item 2</a>
-            <li><a href="#">Item 3</a>
+            <li><a href="#">Option 1</a>
+            <li><a href="#">Option 2</a>
           </ul>
         </div>
       </div>
-      <div class="pure-u-4-5">
-        <h1>A Title</h1>
-        <p>Body text body text. Hipster ipsum. Eyes and bees.</p>
+      <div id="main">
+        <div class="header">
+          <h1>Happiness</h1>
+        </div>
+
+        <div class="content">
+          <div id="editor">from sr import *
+
+R = Robot()
+R.motors[0].m0.power = 40
+</div>
+        </div>
       </div>
     </div>
-    <!--
-    <h1>IDE</h1>
-    <div>
-      <a class="pure-button" href="#">A Pure Button</a>
-    </div>
-    -->
   </body>
 </html>
+

@@ -1,7 +1,10 @@
 COFFEE=coffee
 
 JS_COMPONENTS=build/hello.js build/goodbye.js
-JS_EXTERNALS=bower_components/zepto/zepto.js
+JS_EXTERNALS=bower_components/zepto/zepto.js \
+             bower_components/ace-builds/src-noconflict/ace.js \
+             bower_components/ace-builds/src-noconflict/mode-python.js \
+             bower_components/ace-builds/src-noconflict/theme-textmate.js
 CSS_SOURCES=bower_components/pure/pure-min.css style.css
 
 all: site/index.html site/ide.js site/ide.css
