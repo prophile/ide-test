@@ -12,7 +12,9 @@
   "dependencies": {
     "pure": "0.4",
     "ace-builds": "1.1",
-    "zepto": "1.1"
+    "zepto": "1.1",
+    "firepad": "0.1",
+    "firebase": "1.0"
   },
   "private": true
 }

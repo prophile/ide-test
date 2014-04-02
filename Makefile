@@ -4,8 +4,12 @@ JS_COMPONENTS=build/hello.js build/goodbye.js
 JS_EXTERNALS=bower_components/zepto/zepto.js \
              bower_components/ace-builds/src-noconflict/ace.js \
              bower_components/ace-builds/src-noconflict/mode-python.js \
-             bower_components/ace-builds/src-noconflict/theme-textmate.js
-CSS_SOURCES=bower_components/pure/pure-min.css style.css
+             bower_components/ace-builds/src-noconflict/theme-textmate.js \
+             bower_components/firebase/firebase.js \
+             bower_components/firepad/dist/firepad.js
+CSS_SOURCES=bower_components/pure/pure-min.css \
+            bower_components/firepad/dist/firepad.css \
+            style.css
 #COMPRESSION_OPTIONS=--compress --mangle
 COMPRESSION_OPTIONS=
 
