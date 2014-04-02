@@ -23,8 +23,23 @@
           <h1>Happiness</h1>
         </div>
 
-        <div class="content">
+        <div id="mode-edit" class="content" hidden>
           <div id="editor"></div>
+        </div>
+
+        <div id="mode-login" class="content">
+          <form class="pure-form">
+            <fieldset>
+              <legend>Log In</legend>
+
+              <input id="username" type="text" placeholder="Username">
+              <input id="password" type="password" placeholder="Password">
+
+              <button id="login" class="pure-button pure-button-primary">
+                Log In
+              </button>
+            </fieldset>
+          </form>
         </div>
       </div>
     </div>

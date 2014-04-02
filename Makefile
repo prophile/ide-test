@@ -1,6 +1,8 @@
 COFFEE=coffee
 
-JS_COMPONENTS=init
+JS_COMPONENTS=init \
+              utils/forms \
+              components/login
 JS_EXTERNALS=bower_components/zepto/zepto.js \
              bower_components/ace-builds/src-noconflict/ace.js \
              bower_components/ace-builds/src-noconflict/mode-python.js \
