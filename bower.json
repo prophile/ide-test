@@ -14,7 +14,8 @@
     "ace-builds": "1.1",
     "zepto": "1.1",
     "firepad": "0.1",
-    "firebase": "1.0"
+    "firebase": "1.0",
+    "bacon": "0.7"
   },
   "private": true
 }
