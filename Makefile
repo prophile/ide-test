@@ -1,6 +1,6 @@
 COFFEE=coffee
 
-JS_COMPONENTS=build/hello.js build/goodbye.js
+JS_COMPONENTS=init
 JS_EXTERNALS=bower_components/zepto/zepto.js \
              bower_components/ace-builds/src-noconflict/ace.js \
              bower_components/ace-builds/src-noconflict/mode-python.js \
@@ -19,10 +19,10 @@ bower_components: bower.json
 	bower install
 
 build/%.js: src/%.litcoffee | build
-	$(COFFEE) --compile --map -o build $<
+	$(COFFEE) --compile --map -o build/$(patsubst src/%,%,$(dir $<)) $<
 
-build/source.map: $(JS_COMPONENTS)
-	mapcat $(JS_COMPONENTS:.js=.map) -m $@ -j $(@:.map=.js)
+build/source.map: $(JS_COMPONENTS:%=build/%.js)
+	mapcat $(JS_COMPONENTS:%=build/%.map) -m $@ -j $(@:.map=.js)
 
 build:
 	mkdir -p build

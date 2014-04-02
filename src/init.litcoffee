@@ -1,12 +1,16 @@
-Goodbye World Example
-=====================
+Initialisation
+==============
 
-Goodbye, world!
+Storage
+-------
 
-    console.log "Goodbye, world!"
+We put all the bits and pieces that need global access in a global variable
+called 'Happiness'. This keeps everything nice and constrained.
 
-Start The Editor
-================
+    window.Happiness = {}
+
+Starting the Editor
+-------------------
 
 Deferred,
 
