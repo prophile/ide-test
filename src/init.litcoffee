@@ -18,7 +18,9 @@ Deferred,
 
 First, we grab a Firebase connection.
 
-      firebase = new Firebase('https://resplendent-fire-5939.firebaseio.com/')
+      BASE_URI = 'https://resplendent-fire-5939.firebaseio.com/'
+
+      firebase = new Firebase(BASE_URI + '/SRZ/proj1/bees')
 
 We start the editor.
 
